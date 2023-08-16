@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>World Countries Data</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="flag-country">
+        <div class="globe">
+          <p class="title">WORLD COUNTRIES DATA</p>
+          <p class="totalNumber"></p>
+          <p class="containing"></p>
+          <div class="input-txt">
+            <input class="inputs" type="text" name="" id="" />
+            <div class="sortButton">
+              <button class="sortName">Name</button>
+              <button class="sortCapital">Capital</button>
+              <button class="sortPopulation">Population</button>
+              <a class="fa fa-bar-chart" id="graf" href="#section-2"></a>
+            </div>
+          </div>
+        </div>
+        <div class="content"></div>
+      </div>
+      <section id="section-2">
+        <div class="grafik">
+          <div class="mostButt">
+            <button onclick="fetchPopulation()">POPULATION</button>
+            <button onclick="fetchLanguage()">LANGUAGE</button>
+            <p id="most"></p>
+          </div>
+          <div class="countries-container">
+            <div class="country-container1"></div>
+            <div class="country-container2" style="display: none"></div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="index.js" type="text/javascript"></script>
+  </body>
+</html>
